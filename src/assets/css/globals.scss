@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+
+:root {
+  --foreground-rgb: rgb(211, 216, 232);
+  scroll-behavior: smooth;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: #0d1224;
+}
+
+#sticky-card-1 {
+  --index: 1;
+}
+
+#sticky-card-2 {
+  --index: 2;
+}
+
+#sticky-card-3 {
+  --index: 3;
+}
+
+#sticky-card-4 {
+  --index: 4;
+}
+
+.sticky-card {
+  top: calc(var(--index) * 4rem);
+}
+
+.gap-provider{
+  height: 3.5rem;
+  background-color: #0d1224;
+  position: fixed;
+}
+
+.navbar-bg{
+  background-color: #0d1224;
+}
+
+.sticky{
+  z-index: 9;
+}
+.heading-background{
+  padding: 2rem;
+  width: 700%;
+  background-color:transparent;
+  backdrop-filter: blur(15px);
+}
+// For smaller devices
+@media (max-width: $breakpoint-md) {
+  .glow-container-contact-qr, .contact-form-container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .scroll-top-btn{
+    bottom: 7.5rem;
+  }
+  .gap-provider{
+    display: none;
+  }
+  .connect-section{
+    display: flex;
+    .contact-me-btn{
+      display: none;
+    }
+    .resume-btn{
+      margin-left: 5rem;
+    }
+  }
+}
+// For larger devices
+@media (min-width: $breakpoint-md) {
+  #about, #experience, #skills, #projects, #education{
+    scroll-margin-top: 5rem;
+  }
+  #hero{
+    top: 3rem;
+  }
+}

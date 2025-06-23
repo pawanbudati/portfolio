@@ -1,0 +1,73 @@
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+
+.nav {
+    background: rgba(107, 48, 150, 0.112);
+    padding: 0.35rem 0.7rem;
+    z-index: 99;
+    position: fixed;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+
+    .bubble {
+        position: absolute;
+        top: 0.7rem;
+        bottom: 0.7rem;
+        z-index: 1;
+        background: #e5f4ff00;
+        border-radius: 3rem;
+    }
+
+    .bubble::before{
+        content: '';
+        position: absolute;
+        top: -2px; left: -2px; right: -2px; bottom: -2px;
+        background: linear-gradient(45deg, #258a82, orange);
+        border-radius: 5rem;
+    }
+    
+    a {
+        padding: 0.9rem;
+        border-radius: 3rem;
+        display: flex;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1.1rem;
+        position: relative;
+        z-index: 2;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: white;
+        }
+
+        &.active {
+            color: #ffffff;
+            
+            &:hover {
+                color: #b7ffb4;
+            }
+        }
+    }
+
+    // For smaller devices
+    @media (max-width: $breakpoint-md) {
+        left: 50%;
+        bottom: 3rem;
+        .section-title {
+            display: none;
+        }
+    }
+
+    // For larger devices
+    @media (min-width: $breakpoint-md) {
+        left: 50%;
+        top: 0.5rem;
+        .section-icon {
+            display: none;
+        }
+    }
+
+}
