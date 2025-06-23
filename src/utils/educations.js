@@ -8,13 +8,13 @@ export const educations = [
   {
     id: 2,
     title: "Higher Secondary Certificate",
-    duration: "2016 - 2017",
+    duration: "2015 - 2017",
     institution: "Narayana Junior College - Chirala",
   },
   {
     id: 3,
     title: "Secondary School Certificate",
-    duration: "2008 - 2016",
+    duration: "2008 - 2015",
     institution: "Sri Satya Sai High School - Chirala",
   }
 ]
