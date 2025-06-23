@@ -1,4 +1,4 @@
-import { AiOutlineHome, AiFillPhone, AiOutlineUser, AiOutlineOpenAI, AiOutlineProject, AiOutlineRead, AiOutlineSwitcher } from 'react-icons/ai';
+import { AiOutlineHome, AiOutlineUser, AiOutlineOpenAI, AiOutlineProject, AiOutlineRead, AiOutlineSwitcher, AiOutlinePhone } from 'react-icons/ai';
 
 const navbarConfig = [
     { id:1, icon: AiOutlineHome, route: "#", title: "Home", tooltip:"Home" },
@@ -7,7 +7,7 @@ const navbarConfig = [
     { id:6, icon: AiOutlineOpenAI, route: "#skills", title: "Skills", tooltip:"Skills" },
     { id:4, icon: AiOutlineProject, route: "#projects", title: "Projects", tooltip:"Projects" },
     { id:7, icon: AiOutlineRead, route: "#education", title: "Education", tooltip:"Education" },
-    { id:5, icon: AiFillPhone, route: "#contact", title: "Contact", tooltip:"Contact" },
+    { id:5, icon: AiOutlinePhone, route: "#contact", title: "Contact", tooltip:"Contact" },
 ]
 
 
