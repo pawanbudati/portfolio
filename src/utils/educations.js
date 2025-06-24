@@ -7,14 +7,14 @@ export const educations = [
   },
   {
     id: 2,
-    title: "Higher Secondary Certificate",
+    title: "Higher Secondary",
     duration: "2015 - 2017",
     institution: "Narayana Junior College - Chirala",
   },
-  {
-    id: 3,
-    title: "Secondary School Certificate",
-    duration: "2008 - 2015",
-    institution: "Sri Satya Sai High School - Chirala",
-  }
+  // {
+  //   id: 3,
+  //   title: "Secondary School",
+  //   duration: "2008 - 2015",
+  //   institution: "Sri Satya Sai High School - Chirala",
+  // }
 ]

@@ -31,7 +31,7 @@ function App() {
 		<Experience />
 		<Skills />
 		<Projects />
-		<Education />
+		{/* <Education /> */}
 		<Contact />
 		{/* <BrowserRouter>
 			<Routes>
