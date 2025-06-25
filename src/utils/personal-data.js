@@ -11,5 +11,5 @@ export const personalData = {
   github: 'https://github.com/pawanbudati',
   linkedIn: 'https://www.linkedin.com/in/pavanbudati/',
   twitter: 'https://twitter.com/pawanbudati',
-  resume: "https://www.canva.com/design/DAGkEJruBAY/JUo_xMwlV1O7iQbdlZTxjQ/view?utm_content=DAGkEJruBAY"
+  resume: "https://pawanbudati.github.io/resume/"
 }
